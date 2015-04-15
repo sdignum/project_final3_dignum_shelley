@@ -156,7 +156,7 @@ header {
 }
 
 nav {
-	padding-bottom: 70px;
+	padding-bottom: 30px;
 }
 
 nav ul {
@@ -202,6 +202,41 @@ nav ul li a {
 	-webkit-transform: translateY(0px);
 	-moz-transform: translateY(0px);
 	transform: translateY(0px);
+}
+
+.pretty-divider {
+	margin-bottom: 20px;
+	line-height: 0.5;
+	text-align: center;
+}
+
+.pretty-divider span {
+	display: inline-block;
+	position: relative; 
+}
+
+.flourish {
+	width: 50px;
+	padding: 0px 5px;
+}
+
+.pretty-divider span::before, .pretty-divider span::after {
+	content: "";
+	position: absolute;
+	height: 5px;
+	border-bottom: 1px solid #d48e4a;
+	top: 0;
+	width: 200%;
+	margin: 0 10px;
+}
+
+.pretty-divider span::before {
+  right: 100%;
+  margin-right: 5px;
+}
+.pretty-divider span::after {
+  left: 100%;
+  margin-left: 5px;
 }
 
 section {
