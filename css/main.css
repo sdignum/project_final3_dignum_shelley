@@ -209,12 +209,20 @@ section {
 	padding: 0;
 	margin: auto;
 	width: 301px;
-	margin-bottom: 10px;
+}
+
+#reservation, #special, #award {
+	margin-bottom: 20px;
 }
 
 #special {
 	position: relative;
 	top: 410px;
+}
+
+#award {
+	position: relative;
+	top: 840px;
 }
 
 .view {
@@ -240,6 +248,10 @@ section {
 
 #special .view .mask {
 	background-color: rgba(9, 32, 47, 0.7); ;
+}
+
+#award .view .mask {
+	background-color: rgba(212, 142, 74, 0.7); ;
 }
 
 .view .mask-appear {
@@ -282,26 +294,27 @@ section {
     transform-origin: 25% 160%;
 }
 
-.mask-appear h3 {
-   color: #fff;
-   text-transform: uppercase;
-   font-size: 21px;
-   position: relative;
-   top: 25%;
-   transform: translateY(-50%);
-   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
-   filter: alpha(opacity=0);
-   opacity: 0;
-   -webkit-transform: scale(0);
-   -moz-transform: scale(0);
-   -o-transform: scale(0);
-   -ms-transform: scale(0);
-   transform: scale(0);
-   -webkit-transition: all 0.5s linear;
-   -moz-transition: all 0.5s linear;
-   -o-transition: all 0.5s linear;
-   -ms-transition: all 0.5s linear;
-   transition: all 0.5s linear;
+.mask-appear p, .mask-appear h3, .mask-appear blockquote, .mask-appear cite {
+	color: #fff;
+	-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-o-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0);
+	-webkit-transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	-ms-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+}
+
+.feature-content {
+	position: relative;
+	top: 45%;
+	transform: translateY(-50%);
 }
 
 .mask-appear p {
@@ -309,22 +322,19 @@ section {
    font-size: 18px;
    line-height: 1.5;
    padding: 0 10px;
-   position: relative;
-   top: 25%;
-   transform: translateY(-50%);
-   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
-   filter: alpha(opacity=0);
-   opacity: 0;
-   -webkit-transform: scale(0);
-   -moz-transform: scale(0);
-   -o-transform: scale(0);
-   -ms-transform: scale(0);
-   transform: scale(0);
-   -webkit-transition: all 0.5s linear;
-   -moz-transition: all 0.5s linear;
-   -o-transition: all 0.5s linear;
-   -ms-transition: all 0.5s linear;
-   transition: all 0.5s linear;
+}
+
+.mask-appear h3 {
+   text-transform: uppercase;
+   font-size: 21px;
+}
+
+.mask-appear blockquote {
+	font-size: 21px;
+}
+
+.mask-appear cite {
+	font-size: 16px;
 }
 
 .view:hover .mask-appear {
@@ -333,7 +343,7 @@ section {
    opacity: 1;
 }
 
-.view:hover p, .view:hover h3 {
+.view:hover p, .view:hover h3, .view:hover blockquote, .view:hover cite {
    -webkit-transform: scale(1);
    -moz-transform: scale(1);
    -o-transform: scale(1);
