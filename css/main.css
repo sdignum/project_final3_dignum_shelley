@@ -203,3 +203,56 @@ nav ul li a {
 	-moz-transform: translateY(0px);
 	transform: translateY(0px);
 }
+
+section {
+	text-align: center;
+	padding: 0;
+	margin: auto;
+	width: 95%;
+}
+
+.view {
+	width: 100%;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+}
+
+.view .mask {
+   width: 80px;
+   height: 400px;
+   position: absolute;
+   overflow: hidden;
+   top: 0;
+   left: 0;
+   background-color: rgba(191, 28, 46, 0.7); ;
+   -webkit-transition: all 0.5s linear;
+   -moz-transition: all 0.5s linear;
+   -o-transition: all 0.5s linear;
+   -ms-transition: all 0.5s linear;
+   transition: all 0.5s linear;
+   /*-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=.7)";
+   filter: alpha(opacity=0.7);
+   opacity: .7;*/
+}
+
+.view img {
+   display: block;
+   position: relative;
+}
+
+.mask h2 {
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: normal;
+	font-size: 44px;
+	position: relative;
+	top: 225px;
+	left: 0;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    ;
+}
