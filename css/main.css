@@ -30,11 +30,12 @@ h1 {
   color: #09202f;
   font-size: 72px;
   margin-bottom: 0;
+  font-weight: normal;
 }
 
 h2 {
   font-family: "mostra-nuova",sans-serif;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 32px;
   text-transform: uppercase;
   color: #bf1c2e;
@@ -693,11 +694,11 @@ footer h3 {
 	font-weight: normal;
 	margin: 0;
 	margin-top: 40px;
-	line-height: .8;
 }
 
 footer p {
 	margin: 0;
+	line-height: normal;
 }
 
 .copyright {
