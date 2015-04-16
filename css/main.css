@@ -62,9 +62,9 @@ a:active {
     -o-animation-fill-mode: both;
 } 
 
-.animated.animate {
+/*.animated.animate {
 	opacity: 1;
-}
+}*/
 
 @-webkit-keyframes fadeInLeft { 
     0% { 
@@ -176,6 +176,7 @@ nav ul {
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
+	display: inline;
 }
 
 nav ul li {
@@ -450,6 +451,82 @@ footer a {
 	font-size: 24px;
 }
 
-.copyright {
-	font-size: 12px;
+footer h3 {
+	font-family: "lush", serif;
+	font-size: 36px;
+	font-weight: normal;
+	margin: 0;
+	margin-top: 40px;
+	line-height: .8;
 }
+
+footer p {
+	margin: 0;
+}
+
+.copyright {
+	text-align: center;
+	font-size: 12px;
+	margin-bottom: 30px;
+	clear: both;
+}
+
+@media (min-width: 600px) {
+
+	header img {
+		width: 35%;
+	}
+
+	nav {
+		display: inline-block;
+		position: relative;
+		width: 100%;
+	}
+
+	.menu-left {
+		float: left;
+		position: absolute;
+		top: -100px;
+		left: 0;
+	}
+
+	.menu-left li {
+		padding-left: 10px;
+		padding-right: 20px;
+	}
+
+	.menu-right {
+		float: right;
+		position: absolute;
+		top: -100px;
+		right: 0;
+	}
+
+	.menu-right li {
+		padding-right: 10px;
+	}
+
+	.link-effect a {
+		font-size: 21px;
+	}	
+
+	#feature-wrapper {
+		margin: auto;
+		width: 98%;
+	}
+	#reservation, #award {
+	float: left;
+	width: 49%;
+	/*padding-right: 1%;*/
+	}
+
+	#special, footer {
+		float: right;
+		width: 49%;
+	}
+
+	/*footer {
+		padding-top: 150px;
+	}*/
+}
+
