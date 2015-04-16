@@ -490,10 +490,10 @@ section {
 	border: 1px solid #ffffff;
 }
 
-section #menu-page {
+/*section #menu-page {
 	width: 100%;
 	margin: auto;
-}
+}*/
 
 .menu-navigation {
 	text-align: center;
@@ -502,12 +502,10 @@ section #menu-page {
 .menu-navigation a{
 	display: block;
 	font-size: 24px;
-	line-height: 1.5;
 	cursor: pointer;
-	padding: 10px 30px;
+	padding: 10px 10px;
 	border: solid 3px #bf1c2e;
 	color: #bf1c2e;
-	font-size: 24px;
 	margin-bottom: 5px;
 }
 
@@ -532,7 +530,7 @@ section #menu-page {
 .menu .item-description {
 	font-size: 12px;
 	padding-bottom: 15px;
-	width: 80%;
+	width: 95%;
 }
 
 footer {
@@ -631,6 +629,16 @@ footer p {
 	font-size: 18px;
 	}
 
+	.menu-navigation {
+		margin-bottom: 20px;
+	}
+
+	.menu-navigation a{
+	display: inline;
+	font-size: 16px;
+	margin-right: 5px;
+	}
+
 }
 
 @media (min-width: 750px) {
@@ -657,6 +665,10 @@ footer p {
 		width: 33%;
 		float: left;
 		padding-right: .5%;
+	}
+
+	#about-wrapper {
+		width: 75%;
 	}
 
 	footer {
@@ -705,6 +717,11 @@ footer p {
 
 	#reservation, #special, #award {
 		padding-right: 3%;
+	}
+
+	.menu-navigation a{
+	font-size: 21px;
+	padding: 10px 25px;
 	}
 
 	footer {
