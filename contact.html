@@ -2,22 +2,27 @@
 <html class="no-js">
 <head>
     <meta charset="utf-8">
-    <title>Gusteau's Fine Dining</title>
+    <title>Gusteau's Fine Dining - Contact</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <script src="//use.typekit.net/sos5jeq.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
     <link rel="stylesheet" href="css/vendor/normalize.min.css">
     <link rel="stylesheet" href="css/main.css">
+<!--     <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css"> -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     
 </head>
 <body>
     <div id="wrapper">
+        <!-- <div id="topbar" style="position: absolute; top: 0; left: 0; width: 100%; background: #ccc;">
+            Top bar
+        </div> -->
 
         <header>
-
             <div id="topbar">
+
                 <a href="index.html">
                     <img src="img/logo-gusteaus.png" alt="Gusteaus Logo" class="animated fadeInLeft">
                 </a>
@@ -47,12 +52,37 @@
             </div>
         </header>
 
-        <div data-sr="enter right" id="about-wrapper">
+        <div class="animated fadeInLeft" id="about-wrapper">
 
-            <h1>About</h1>
-            <p>Although each of the world's countries would like to dispute this fact, we French know the truth: The best food in the world is made in France. The best food in France is made in Paris. And the best food in Paris, some say, is made by Chef Auguste Gusteau.</p>
+            <h1>Contact</h1>
 
-            <p>Gusteau's restaurant is the toast of Paris, booked five months in advance. And his dazzling ascent to the top of fine French cuisine has made his competitors envious. He is the youngest chef ever to achieve a five-star rating.</p>
+            <form method="post" name="Contact" id="Contact" action="formmail.php">
+                <fieldset>
+                    <legend>Contact Details</legend>
+                    <label for="Name">Name</label><br />
+                    <input type="text" value="" name="Name" id="Name" /><br />
+                    <label for="Email">Email</label><br />
+                    <input type="text" value="" name="Email" class="required  email" id="Email" /><br />
+                </fieldset>
+
+                <fieldset>
+                    <legend>Message/Reservation Details</legend>
+                    <label for="Date">Requested Date</label><br />
+                    <input type="date" value="" name="Date" id="Date" /><br />
+                    <label for="Guests">Number of Guests</label><br />
+                    <input type="number" value="" name="Guests" id="Guests" /><br />
+                    <label for="Message">Message</label><br />
+                    <textarea cols="50" rows="5" name="Message" id="Message"></textarea>
+                </fieldset>
+            
+                    <button type="submit">Submit</button>
+               
+                <input type="hidden" name="required" value="Email">
+                
+                <input type="hidden" name="recipient" value="shelleydignum@gmail.com">
+                </form>
+
+           
         </div>
 
         <footer id="other-footer" data-sr="enter right" class="clearfix">
@@ -86,6 +116,7 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
     <script src='js/scrollReveal.min.js'></script>
+    <script src="js/owl.carousel.js"></script>
     <script src="js/scroll-up-bar.min.js"></script>
     <script src="js/main.js"></script>
     
