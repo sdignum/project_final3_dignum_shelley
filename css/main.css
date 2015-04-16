@@ -19,7 +19,7 @@ html {
 }
 
 body {
-	font-family: "mostra nuova",sans-serif;
+	font-family: "mostra-nuova",sans-serif;
 	font-size: 18px;
 	color: #09202f;
 	border-top: solid 15px #103853;
@@ -33,7 +33,7 @@ h1 {
 }
 
 h2 {
-  font-family: "mostra nuova",sans-serif;
+  font-family: "mostra-nuova",sans-serif;
   font-weight: bold;
   font-size: 32px;
   text-transform: uppercase;
@@ -633,7 +633,7 @@ textarea {
 button {
   /* button style */
   font-size: 24px;
-  font-family: "mostra nuova", sans-serif;
+  font-family: "mostra-nuova", sans-serif;
   text-transform: uppercase;
 	cursor: pointer;
 	padding: 10px 30px;
