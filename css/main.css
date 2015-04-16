@@ -31,6 +31,11 @@ body {
 	margin: auto;
 }
 
+#feature-wrapper {
+	width: 100%;
+	margin-bottom: 30px;
+}
+
 a, a:visited {
 	text-transform: uppercase;
 	font-size: 18px;
@@ -151,7 +156,7 @@ a:active {
     -o-animation-name: fadeInRight;
 }
 
-header {
+header, footer {
 	text-align: center;
 }
 
@@ -250,19 +255,9 @@ section {
 	margin-bottom: 20px;
 }
 
-#special {
-	position: relative;
-	top: 410px;
-}
-
-#award {
-	position: relative;
-	top: 840px;
-}
-
 .view {
 	width: 100%;
-	position: absolute;
+	position: relative;
 	overflow: hidden;
 	top: 0;
 	left: 0;
@@ -422,4 +417,8 @@ section {
 	color: #fff;
 	background-color: #bf1c2e;
 	border: solid 3px #bf1c2e;
+}
+
+footer {
+
 }
