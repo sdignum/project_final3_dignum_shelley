@@ -60,7 +60,6 @@ a:active {
     animation-fill-mode: both; 
     -moz-animation-fill-mode: both;
     -o-animation-fill-mode: both;
-    opacity: 0;
 } 
 
 .animated.animate {
@@ -163,6 +162,10 @@ a:active {
 
 header, footer {
 	text-align: center;
+}
+
+header img {
+	width: 70%;
 }
 
 nav {
