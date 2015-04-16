@@ -539,14 +539,22 @@ footer p {
 	/*padding-right: 1%;*/
 	}
 
-	#special, footer {
+	#special, footer #home-footer {
 		float: right;
 		width: 49%;
 	}
 
-	/*footer {
-		padding-top: 150px;
-	}*/
+	#other-footer .third {
+	width: calc(100% / 3);
+	display: inline-block;
+	float: left;
+	font-size: 18px;
+	}
+
+	#other-footer a {
+	font-size: 18px;
+	}
+
 }
 
 @media (min-width: 750px) {
@@ -584,6 +592,14 @@ footer p {
 	width: calc(100% / 3);
 	display: inline-block;
 	float: left;
+	}
+
+	#other-footer p{
+		font-size: 24px;
+	}
+
+	#other-footer a {
+	font-size: 24px;
 	}
 }
 
