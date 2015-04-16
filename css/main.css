@@ -506,6 +506,11 @@ footer p {
 		padding-right: 10px;
 	}
 
+	.pretty-divider span::before, .pretty-divider span::after {
+		content: "";
+		width: 400%;
+	}
+
 	.link-effect a {
 		font-size: 21px;
 	}	
@@ -528,5 +533,41 @@ footer p {
 	/*footer {
 		padding-top: 150px;
 	}*/
+}
+
+@media (min-width: 750px) {
+
+	.link-effect a {
+		font-size: 24px;
+	}
+
+	.menu-left li {
+		padding-left: 20px;
+		padding-right: 30px;
+	}
+
+	.menu-right li {
+		padding-right: 20px;
+	}
+
+	#reservation, #award, #special {
+		width: 33%;
+		float: left;
+	}
+
+	#reservation, #special {
+		padding-right: .5%;
+	}
+
+	footer {
+		width: 98%;
+		float: none;
+	}
+
+	.third {
+	width: calc(100% / 3);
+	display: inline-block;
+	float: left;
+}
 }
 
