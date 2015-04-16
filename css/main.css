@@ -60,7 +60,12 @@ a:active {
     animation-fill-mode: both; 
     -moz-animation-fill-mode: both;
     -o-animation-fill-mode: both;
+    opacity: 0;
 } 
+
+.animated.animate {
+	opacity: 1;
+}
 
 @-webkit-keyframes fadeInLeft { 
     0% { 
