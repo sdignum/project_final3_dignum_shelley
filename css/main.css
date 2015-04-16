@@ -506,11 +506,6 @@ footer p {
 		padding-right: 10px;
 	}
 
-	.pretty-divider span::before, .pretty-divider span::after {
-		content: "";
-		width: 400%;
-	}
-
 	.link-effect a {
 		font-size: 21px;
 	}	
@@ -518,7 +513,9 @@ footer p {
 	#feature-wrapper {
 		margin: auto;
 		width: 98%;
+		max-width: 1000px;
 	}
+
 	#reservation, #award {
 	float: left;
 	width: 49%;
@@ -550,17 +547,19 @@ footer p {
 		padding-right: 20px;
 	}
 
+	.pretty-divider span::before, .pretty-divider span::after {
+	content: "";
+	width: 400%;
+	}
+
 	#reservation, #award, #special {
 		width: 33%;
 		float: left;
-	}
-
-	#reservation, #special {
 		padding-right: .5%;
 	}
 
 	footer {
-		width: 98%;
+		width: 100%;
 		float: none;
 	}
 
@@ -568,6 +567,39 @@ footer p {
 	width: calc(100% / 3);
 	display: inline-block;
 	float: left;
+	}
 }
+
+@media (min-width: 1000px) {
+
+	header img {
+		width: 25%;
+	}
+
+	.link-effect a {
+		font-size: 28px;
+	}
+
+	.menu-left li {
+		padding-left: 70px;
+		padding-right: 30px;
+	}
+
+	.menu-right li {
+		padding-right: 70px;
+	}
+
+	.pretty-divider span::before, .pretty-divider span::after {
+	content: "";
+	width: 600%;
+	}
+
+	#reservation, #special, #award {
+		padding-right: 3%;
+	}
+
+	footer {
+		float: left;
+	}
 }
 
