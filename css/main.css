@@ -233,7 +233,15 @@ nav ul li a {
 	position: relative;
 }
 
+
+
 .link-effect a {
+	padding: 0 0 5px;
+}
+
+.active a {
+	border-bottom: 5px solid #d48e4a;
+	width: 100%;
 	padding: 0 0 5px;
 }
 
