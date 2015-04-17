@@ -19,7 +19,7 @@ html {
 }
 
 body {
-	font-family: "mostra-nuova",sans-serif;
+	font-family: "mostra nuova",sans-serif;
 	font-size: 18px;
 	color: #09202f;
 	border-top: solid 15px #103853;
@@ -34,7 +34,7 @@ h1 {
 }
 
 h2 {
-  font-family: "mostra-nuova",sans-serif;
+  font-family: "mostra nuova",sans-serif;
   font-weight: normal;
   font-size: 32px;
   text-transform: uppercase;
@@ -334,6 +334,7 @@ section {
 
 .view {
 	width: 100%;
+	max-width: 301px;
 	position: relative;
 	overflow: hidden;
 	top: 0;
@@ -341,7 +342,7 @@ section {
 }
 
 .view .mask {
-   width: 80px;
+   width: 25%;
    height: 400px;
    position: absolute;
    overflow: hidden;
@@ -362,12 +363,12 @@ section {
 }
 
 .view .mask-appear {
-   width: 221px;
+   width: 75%;
    height: 400px;
    position: absolute;
    overflow: hidden;
    top: 0;
-   left: 80px;
+   left: 25%;
    background-color: rgba(13, 9, 6, .4);
    -webkit-transition: all 0.5s linear;
    -moz-transition: all 0.5s linear;
@@ -402,7 +403,7 @@ section {
     -o-transform: rotate(-90deg);
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
     width: 400px;
-    transform-origin: 25% 160%;
+    transform-origin: 25% 165%;
 }
 
 .mask-appear p, .mask-appear h3, .mask-appear blockquote, .mask-appear cite {
@@ -445,14 +446,15 @@ section {
 }
 
 .mask-appear h3 {
+	FONT-FAMILY: "mostra nuova", sans-serif;
    text-transform: uppercase;
    font-size: 21px;
    margin: 0;
 }
 
-.mask-appear blockquote {
+/*.mask-appear blockquote {
 	font-size: 21px;
-}
+}*/
 
 .mask-appear cite {
 	font-size: 16px;
@@ -761,15 +763,19 @@ footer p {
 		max-width: 1000px;
 	}
 
+/*	.view {
+		width: 265px;
+	}*/
+
 	#reservation, #award {
 	float: left;
-	width: 49%;
+	width: 50%;
 	/*padding-right: 1%;*/
 	}
 
 	#special, footer #home-footer {
 		float: right;
-		width: 49%;
+		width: 50%;
 	}
 
 	#other-footer .third {
@@ -836,6 +842,11 @@ footer p {
 
 	#about-wrapper, #menu-wrapper {
 		width: 65%;
+	}
+
+	.mask-appear a {
+		padding: 10px 0;
+		font-size: 18px;
 	}
 
 	footer {
