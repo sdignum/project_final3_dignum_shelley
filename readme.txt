@@ -1,4 +1,5 @@
-URL:
+URL: http://www.shelleydignum.com/gusteaus/
+https://github.com/sdignum/project_final3_dignum_shelley.git
 
 Resources:
--
+Plugins:- https://github.com/julianlloyd/scrollReveal.js- http://owlgraphic.com/owlcarousel/index.html- http://amsul.ca/pickadate.js/Other Resources:- Animation: https://coveloping.com/tools/css-animation-generator- Lines beside flourish: https://css-tricks.com/line-on-sides-headers/- Text rotation: http://www.cssportal.com/css3-text-rotate-generator/ & http://www.css3maker.com/text-rotation.html- Calc Resource: https://css-tricks.com/a-couple-of-use-cases-for-calc/- Menu Inspiration: http://themeforest.net/item/gourmet-multipurpose-restaurant-html5-template/full_screen_preview/10992918- Form Resource: http://html5doctor.com/html5-forms-input-types/- Form Styling Help: http://www.jqueryrain.com/?yd_RgIR2- Form Functionality: http://www.tectite.com/formmailpage.php?WWWTECTITE=3bsbc77pgbtk213evcu58fers2Note: The Typekit font is not able to be viewed locally if you do not also have those fonts loaded on your computer already. Please refer to live site for actual spacing with fonts.
