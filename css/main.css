@@ -306,6 +306,8 @@ section {
 	width: 301px;
 }
 
+/*Home Page Features*/
+
 #reservation, #special, #award {
 	margin-bottom: 20px;
 }
@@ -379,13 +381,9 @@ section {
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
     -o-transform: rotate(-90deg);
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    -ms-transform: rotate(-90deg);
     width: 400px;
     transform-origin: 25% 165%;
-}
-
-.mask-appear p, .mask-appear h3, .mask-appear blockquote, .mask-appear cite {
-	color: #fff;
 }
 
 #reservation .feature-content, #special .feature-content {
@@ -412,6 +410,10 @@ section {
 
 #award .feature-content {
 	margin-top: 150px;
+}
+
+.mask-appear p, .mask-appear h3, .mask-appear blockquote, .mask-appear cite {
+	color: #fff;
 }
 
 .mask-appear p {
@@ -484,6 +486,8 @@ section {
 	border: 1px solid #ffffff;
 }
 
+/*Menu*/
+
 .menu-navigation {
 	text-align: center;
 }
@@ -523,22 +527,19 @@ section {
 }
 
 
-/* -------------------------------- 
+/* Form */
 
-Form
-
--------------------------------- */
 form {
-  width: 95%;
-  max-width: 600px;
-  margin: auto;
+	width: 95%;
+	max-width: 600px;
+	margin: auto;
 }
 
 fieldset {
-  margin: 24px 0;
-  border: none;
-  padding: 0;
-  padding-bottom: 20px;
+	margin: 24px 0;
+	border: none;
+	padding: 0;
+	padding-bottom: 20px;
 }
 
 fieldset p {
@@ -548,23 +549,23 @@ fieldset p {
 }
 
 legend {
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-  font-size: 24px;
-  border-bottom: 1px solid #ecf0f1;
-  text-transform: uppercase;
-  color: #bf1c2e;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	font-size: 24px;
+	border-bottom: 1px solid #ecf0f1;
+	text-transform: uppercase;
+	color: #bf1c2e;
 }
 
 label {
-  margin: 20px 0 5px 0;
-  display: block;
+	margin: 20px 0 5px 0;
+	display: block;
 }
 
 input, textarea, select, label {
-  color: #09202f;
-  font-family: "mostra nuova", sans-serif;
-  font-size: 16px;
+	color: #09202f;
+	font-family: "mostra nuova", sans-serif;
+	font-size: 16px;
 }
 
 input[type="text"],
@@ -573,13 +574,8 @@ input[type="tel"],
 textarea,
 select,
 legend {
-  display: block;
-  width: 100%;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
+	display: block;
+	width: 100%;
 }
 
 input[type="date"],
@@ -595,11 +591,10 @@ input[type="date"],
 input[type="time"],
 input[type="number"],
 textarea, select {
-  /* general style for input elements */
-  padding: 12px;
-  border: 1px solid #cfd9db;
-  background-color: #ffffff;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08);
+	padding: 12px;
+	border: 1px solid #cfd9db;
+	background-color: #ffffff;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08);
 }
 
 input[type="text"]:focus,
@@ -610,21 +605,20 @@ input[type="time"]:focus,
 input[type="number"]:focus,
 textarea:focus,
 select:focus {
-  outline: none;
-  border-color: #bf1c2e;
+	outline: none;
+	border-color: #bf1c2e;
 }
 
 textarea {
-  min-height: 200px;
-  resize: vertical;
-  overflow: auto;
+	min-height: 200px;
+	resize: vertical;
+	overflow: auto;
 }
 
 button {
-  /* button style */
-  font-size: 24px;
-  font-family: "mostra nuova", sans-serif;
-  text-transform: uppercase;
+	font-size: 24px;
+	font-family: "mostra nuova", sans-serif;
+	text-transform: uppercase;
 	cursor: pointer;
 	padding: 10px 30px;
 	border: solid 3px #bf1c2e;
@@ -642,16 +636,16 @@ button:hover {
 }
 
 button:focus {
-  outline: none;
-  background: #2b3e51;
+	outline: none;
+	background: #2b3e51;
 }
 
 button:active {
-  -webkit-transform: scale(0.9);
-  -moz-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  -o-transform: scale(0.9);
-  transform: scale(0.9);
+	-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	-ms-transform: scale(0.9);
+	-o-transform: scale(0.9);
+	transform: scale(0.9);
 }
 
 footer {
@@ -730,8 +724,8 @@ footer p {
 	}
 
 	#reservation, #award {
-	float: left;
-	width: 50%;
+		float: left;
+		width: 50%;
 	}
 
 	#special, footer #home-footer {
@@ -740,14 +734,14 @@ footer p {
 	}
 
 	#other-footer .third {
-	width: calc(100% / 3);
-	display: inline-block;
-	float: left;
-	font-size: 18px;
+		width: calc(100% / 3);
+		display: inline-block;
+		float: left;
+		font-size: 18px;
 	}
 
 	#other-footer a {
-	font-size: 18px;
+		font-size: 18px;
 	}
 
 	#about-wrapper, #menu-wrapper {
@@ -759,9 +753,9 @@ footer p {
 	}
 
 	.menu-navigation a{
-	display: inline;
-	font-size: 16px;
-	margin-right: 5px;
+		display: inline;
+		font-size: 16px;
+		margin-right: 5px;
 	}
 
 	.menu .item-name, .menu .item-price {
@@ -797,8 +791,8 @@ footer p {
 	}
 
 	.pretty-divider span::before, .pretty-divider span::after {
-	content: "";
-	width: 400%;
+		content: "";
+		width: 400%;
 	}
 
 	#reservation, #award, #special {
@@ -822,9 +816,9 @@ footer p {
 	}
 
 	.third {
-	width: calc(100% / 3);
-	display: inline-block;
-	float: left;
+		width: calc(100% / 3);
+		display: inline-block;
+		float: left;
 	}
 
 	#other-footer p{
@@ -832,7 +826,7 @@ footer p {
 	}
 
 	#other-footer a {
-	font-size: 24px;
+		font-size: 24px;
 	}
 }
 
@@ -856,8 +850,8 @@ footer p {
 	}
 
 	.pretty-divider span::before, .pretty-divider span::after {
-	content: "";
-	width: 600%;
+		content: "";
+		width: 600%;
 	}
 
 	#reservation, #special, #award {
@@ -869,8 +863,8 @@ footer p {
 	}
 
 	.menu-navigation a{
-	font-size: 21px;
-	padding: 10px 20px;
+		font-size: 21px;
+		padding: 10px 20px;
 	}
 
 	footer {
