@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
-  window.sr = new scrollReveal();
+	window.sr = new scrollReveal();
 
-  // $('#topbar').scrollupbar();
+	// Owl Carousel Plugin
 
 	var owl = $("#menu-carousel");
 
@@ -29,6 +29,8 @@ $(document).ready(function() {
       $(".wine").click(function(){
         owl.jumpTo(3);
       })
+
+    //DatPicker Plugin
 
       $('.datepicker').pickadate({
       	format: 'mmm dd, yyyy',

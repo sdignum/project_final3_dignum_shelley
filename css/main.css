@@ -33,6 +33,13 @@ h1 {
   font-weight: normal;
 }
 
+header h1 {
+	visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
 h2 {
   font-family: "mostra nuova",sans-serif;
   font-weight: normal;
@@ -52,15 +59,6 @@ p {
 	line-height: 1.9em;
 }
 
-/*#topbar {
-	position: absolute; 
-	top: 15px; 
-	left: 0; 
-	width: 100%;
-	background-color: rgba(255, 255, 255, .7);
-	z-index: 200;
-}*/
-
 #wrapper {
 	max-width: 1200px;
 	width: 90%;
@@ -76,7 +74,6 @@ p {
 	width: 90%;
 	margin: auto;
 	margin-bottom: 30px;
-/*	margin-top: 300px;*/
 	z-index: 100;
 }
 
@@ -105,10 +102,6 @@ a:active {
     -moz-animation-fill-mode: both;
     -o-animation-fill-mode: both;
 } 
-
-/*.animated.animate {
-	opacity: 1;
-}*/
 
 @-webkit-keyframes fadeInLeft { 
     0% { 
@@ -460,10 +453,6 @@ section {
    margin: 0;
 }
 
-/*.mask-appear blockquote {
-	font-size: 21px;
-}*/
-
 .mask-appear cite {
 	font-size: 16px;
 }
@@ -519,11 +508,6 @@ section {
 	height: 100%;
 	border: 1px solid #ffffff;
 }
-
-/*section #menu-page {
-	width: 100%;
-	margin: auto;
-}*/
 
 .menu-navigation {
 	text-align: center;
@@ -793,14 +777,9 @@ footer p {
 		max-width: 1000px;
 	}
 
-/*	.view {
-		width: 265px;
-	}*/
-
 	#reservation, #award {
 	float: left;
 	width: 50%;
-	/*padding-right: 1%;*/
 	}
 
 	#special, footer #home-footer {
