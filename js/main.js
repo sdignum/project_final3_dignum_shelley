@@ -2,9 +2,9 @@ $(document).ready(function() {
 
 	window.sr = new scrollReveal();
 
-	// Owl Carousel Plugin
+    // Owl Carousel Plugin
 
-	var owl = $("#review-carousel");
+	var owl = $("#review-carousel")
 
       owl.owlCarousel({
       	singleItem:true,
@@ -12,7 +12,7 @@ $(document).ready(function() {
       	stopOnHover: true
       });
 
-	var owl = $("#menu-carousel");
+	var owl = $("#menu-carousel")
 
       owl.owlCarousel({
       	singleItem:true,
@@ -21,7 +21,7 @@ $(document).ready(function() {
 
       $(".owl-carousel").owlCarousel();
 
-      var owl = $(".owl-carousel").data('owlCarousel');
+      var owl = $(".owl-carousel").data('owlCarousel')
 
       // Custom Navigation Events
       $(".appetizer").click(function(){
@@ -37,7 +37,7 @@ $(document).ready(function() {
         owl.jumpTo(3);
       })
 
-    //DatPicker Plugin
+    //DatePicker Plugin
 
       $('.datepicker').pickadate({
       	format: 'mmm dd, yyyy',
@@ -49,6 +49,4 @@ $(document).ready(function() {
       	max: [22,0],
       	container: '#wrapper'
       });
- 
-
 });

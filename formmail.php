@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="styles.css" type="text/css">
+<link rel="stylesheet" href="css/main.css" type="text/css">
 <?php
 
 
@@ -44,14 +44,14 @@ class Form_Mail
                                    "return_link_url"           => "",
                                    "return_link_title"         => "Return",
                                    "missing_fields_redirect"   => "",
-                                   "missing_fields_message"    => "Please enter a valid email address.<br>\n<a onclick=\"history.go(-1)\" style=\"color: blue;\">Click here</a> to return to the form.<br>\n",
+                                   "missing_fields_message"    => "<h2>Enter a valid email address</h2><p>Please enter a valid email address so we can respond to you.</p><p>\n<a onclick=\"history.go(-1)\">Click here</a> to return to the form.</p><p>&nbsp;</p>\n",
                                    "background"                => "",
                                    "bgcolor"                   => "#ffffff",
                                    "text_color"                => "#000000",
                                    "link_color"                => "blue",
                                    "vlink_color"               => "purple",
                                    "alink_color"               => "red",
-                                   "thank_you_message"         => "Thank You For Filling Out This Form",
+                                   "thank_you_message"         => "We will respond to your message shortly<p>&nbsp;</p>",
                                   );
     var $referers_array = array();
     var $valid_env = array('REMOTE_ADDR','REMOTE_PORT','HTTP_REFERER','HTTP_USER_AGENT');
@@ -282,6 +282,7 @@ class Form_Mail
 
         if($this->config_vars_array["redirect"] == "") {
             $this->display_header();
+            print "<p>&nbsp;</p><h1>Thank You</h1>";
             print "<h2>" . $this->config_vars_array["thank_you_message"] . "</h2><br>\n";
             if ($this->config_vars_array["return_link_url"] != "") {
                 print "<br>\n";
@@ -302,6 +303,7 @@ class Form_Mail
 
         if($this->config_vars_array["missing_fields_redirect"] == "") {
             $this->display_header();
+            print "<h1>S'il vous plait</h1>";
             print $this->config_vars_array["missing_fields_message"];
             $this->display_footer();
         } else {
@@ -343,16 +345,35 @@ class Form_Mail
         print "<body text=\"$text_color\" background=\"$background\" bgcolor=\"$bgcolor\" link=\"$link_color\" alink=\"$alink_color\" vlink=\"$vlink_color\">\n";
 		print "<div id='border'></div>\n";
 		print "<header>
-        	<a href='index.html'><img src='img/logo.png' alt='Shelley Dignum' title='Shelley Dignum'/></a>
-            <h2>Graphic Design, Web Design, Photography</h2>
+            <h1>Welcome</h1>
+            <a href='index.html'>
+                <img src='img/logo-gusteaus.png' alt='Gusteaus Logo' class='animated fadeInLeft'>
+            </a>
+            
+            <nav id='main-menu' class='animated fadeInRight'>
+                <ul class='menu-left'>
+                    <li class='link-effect active'>
+                        <a href='index.html'>Home</a>
+                    </li>
+                    <li class='link-effect'>
+                        <a href='about.html'>About</a>
+                    </li>
+                </ul>
+                <ul class='menu-right'>
+                    <li class='link-effect'>
+                        <a href='menu.html'>Menu</a>
+                    </li>
+                    <li class='link-effect'>
+                        <a href='contact.html'>Contact</a>
+                    </li>
+                </ul>
+
+            </nav>
+            <div class='pretty-divider animated fadeInRight'>
+                <span><img class='flourish' src='img/flourish.jpg' alt='flourish' title='flourish'></span>
+            </div>
         </header>\n";
-		print "<nav>
-        	<ul>
-            	<li><a href='about.html'>About</a></li>
-                <li><a href='work.html'>Work</a></li>
-                <li class='current'><a href='connect.html'>Connect</a></li>
-            </ul>
-        </nav>";
+		
         print "\n<div align=\"center\">";
     }
 
@@ -363,7 +384,31 @@ class Form_Mail
         */
 
         print "</div>\n";
-		print "<footer><p>&copy; 2014 Shelley Dignum</p></footer>\n";
+		print "<footer id='home-footer' data-sr='enter right' class='clearfix'>
+            <div class='pretty-divider'>
+                <span><img class='flourish' src='img/flourish.jpg' alt='flourish' title='flourish'></span>
+            </div>
+            <div class='third'>
+                <h3>Phone</h3>
+                <p>
+                    <a href='tel:1-727-555-1234'>727.555.1234</a>
+                </p>
+            </div>
+            <div class='third'>
+                <h3>Address</h3>
+                <p>200 Gulf Boulevard<br>
+                    Indian Rocks Beach, FL 33785</p>
+            </div>
+            <div class='third'>
+                <h3>Hours</h3>
+                <p>Tuesday through Sunday<br>
+                    3pm-11pm</p>
+            </div>
+            
+        </footer>
+        <div class='copyright'>
+            &copy;2015 Gusteau's
+        </div>\n";
         print "</body>\n";
         print "</html>\n";
     }
