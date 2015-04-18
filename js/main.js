@@ -4,12 +4,19 @@ $(document).ready(function() {
 
 	// Owl Carousel Plugin
 
+	var owl = $("#review-carousel");
+
+      owl.owlCarousel({
+      	singleItem:true,
+      	autoPlay: true,
+      	stopOnHover: true
+      });
+
 	var owl = $("#menu-carousel");
 
       owl.owlCarousel({
       	singleItem:true,
-      	autoHeight:true,
-
+      	autoHeight:true
       });
 
       $(".owl-carousel").owlCarousel();

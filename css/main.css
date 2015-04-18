@@ -434,9 +434,7 @@ section {
 }
 
 #award .feature-content {
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
+	margin-top: 150px;
 }
 
 .mask-appear p {
