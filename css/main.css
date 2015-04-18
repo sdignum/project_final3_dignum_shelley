@@ -74,6 +74,7 @@ p {
 	width: 90%;
 	margin: auto;
 	margin-bottom: 30px;
+	padding-bottom: 30px;
 	z-index: 100;
 }
 
@@ -227,7 +228,6 @@ nav ul li a {
 }
 
 
-
 .link-effect a {
 	padding: 0 0 5px;
 }
@@ -297,29 +297,6 @@ nav ul li a {
 .pretty-divider span::after {
   left: 100%;
   margin-left: 5px;
-}
-
-.button {
-	margin: 50px 0px 50px 0px;
-}
-
-.button a {
-	padding: 10px 30px;
-	border: solid 3px #bf1c2e;
-	color: #bf1c2e;
-	font-size: 24px;
-}
-
-.button a:hover {
-	color: #fff;
-	background-color: #d48e4a;
-	border: solid 3px #d48e4a;
-}
-
-.button a:active {
-	color: #fff;
-	background-color: #bf1c2e;
-	border: solid 3px #bf1c2e;
 }
 
 section {
@@ -445,10 +422,10 @@ section {
 }
 
 .mask-appear h3 {
-	FONT-FAMILY: "mostra nuova", sans-serif;
-   text-transform: uppercase;
-   font-size: 21px;
-   margin: 0;
+	font-family: "mostra nuova", sans-serif;
+	text-transform: uppercase;
+	font-size: 21px;
+	margin: 0;
 }
 
 .mask-appear cite {
