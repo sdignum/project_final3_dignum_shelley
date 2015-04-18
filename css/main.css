@@ -657,6 +657,11 @@ footer a {
 	font-size: 24px;
 }
 
+footer h2, nav h2 {
+	position: absolute;
+	visibility: hidden;
+}
+
 footer h3 {
 	font-family: "lush", serif;
 	font-size: 36px;
