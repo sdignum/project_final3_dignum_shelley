@@ -1,29 +1,10 @@
 $(document).ready(function() {
 
   window.sr = new scrollReveal();
-  
-  $('#topbar').scrollupbar();
 
-  // $(".menu-carousel").owlCarousel({
+  // $('#topbar').scrollupbar();
 
-  // 	navigation : true, // Show next and prev buttons
-  //   singleItem:true,
-  //   autoHeight:true,
-
-  // });
-
-  // var testMenu = $(".menu-carousel");
-
-  // testMenu.owlCarousel();
-
-  // $(".next").click(function(){
-  //   testMenu.trigger('testMenu.next');
-  // })
-  // $(".prev").click(function(){
-  //   testMenu.trigger('testMenu.prev');
-  // })
-
-var owl = $("#menu-carousel");
+	var owl = $("#menu-carousel");
 
       owl.owlCarousel({
       	singleItem:true,
@@ -31,7 +12,7 @@ var owl = $("#menu-carousel");
 
       });
 
-      $(".owl-carousel").owlCarousel()
+      $(".owl-carousel").owlCarousel();
 
       var owl = $(".owl-carousel").data('owlCarousel');
 
@@ -49,7 +30,16 @@ var owl = $("#menu-carousel");
         owl.jumpTo(3);
       })
 
-      if( $('.floating-labels').length > 0 ) floatLabels();
+      $('.datepicker').pickadate({
+      	format: 'mmm dd, yyyy',
+      	container: '#wrapper'
+      });
+
+      $('.timepicker').pickatime({
+      	min: [15,0],
+      	max: [22,0],
+      	container: '#wrapper'
+      });
  
 
 });
